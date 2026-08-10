@@ -1,5 +1,9 @@
 # kilix-lights - a standalone graphical Lights Out game for Kitty terminals.
 
+# Shared build fragments define internal archive targets; bare `make` must
+# still build the runnable game.
+.DEFAULT_GOAL := all
+
 CC      ?= cc
 STRIP   ?= strip
 TAR     ?= tar
